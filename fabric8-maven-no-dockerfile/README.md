@@ -14,6 +14,7 @@ An installation of JDK 11 and Docker is required.
 
 ## Modifications
 
-The initial application was copied from the example and the real modifications
-afterwards can be seen at https://github.com/mvitz/javaspektrum-spring-container/compare/fe5683e...0d1c31d.
+The initial application was copied from fabric8-maven and the modifications done
+can be seen at
+https://github.com/mvitz/javaspektrum-spring-container/compare/fe5683e...0d1c31d.
 
