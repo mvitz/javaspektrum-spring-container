@@ -4,22 +4,21 @@ WORKDIR application
 
 COPY ./target/spring-container-*.jar spring-container.jar
 
-RUN jar xf spring-container.jar
+RUN java -Djarmode=layertools -jar spring-container.jar extract
 
 
 FROM adoptopenjdk/openjdk11:jdk-11.0.6_10-alpine-slim
 
-RUN mkdir -p /app/BOOT-INF && \
+RUN mkdir -p /app && \
     chown -R daemon /app
 
 USER daemon
 WORKDIR /app
 
-COPY --from=builder application/BOOT-INF/lib /app/BOOT-INF/lib/
-COPY --from=builder application/org /app/org/
+COPY --from=builder application/dependencies /app/
+COPY --from=builder application/spring-boot-loader /app/
 
-COPY --from=builder application/BOOT-INF/classes /app/BOOT-INF/classes/
-COPY --from=builder application/META-INF /app/META-INF/
+COPY --from=builder application/application /app/
 
 CMD ["java", "org.springframework.boot.loader.JarLauncher"]
 EXPOSE 8080
