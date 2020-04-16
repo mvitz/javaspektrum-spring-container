@@ -11,6 +11,9 @@ insert_final_newline = true
 max_line_length = 80
 trim_trailing_whitespace = true
 
+[*.xml]
+indent_size = 2
+
 [COMMIT_EDITMSG]
 max_line_length = 72
 trim_trailing_whitespace = false
