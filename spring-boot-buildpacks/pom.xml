@@ -37,6 +37,11 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <image>
+            <name>spring-container-buildpacks</name>
+          </image>
+        </configuration>
       </plugin>
     </plugins>
   </build>
