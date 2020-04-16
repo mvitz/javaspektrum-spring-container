@@ -17,5 +17,5 @@ An installation of JDK 11 is required.
 The initial application was generated with
 https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.2.6.RELEASE&packaging=jar&jvmVersion=11&groupId=de.mvitz&artifactId=spring-container&name=&description=&packageName=de.mvitz.spring.container&dependencies=web,devtools
 and the modifications can be seen at
-https://github.com/mvitz/javaspektrum-spring-container/compare/066e9260ecdf3e387740abdf1fb782f91262c1d5...75dffc98d0ee8ab96e99879b56347290b9a6cd85.
+https://github.com/mvitz/javaspektrum-spring-container/compare/39f1477...75dffc9.
 
