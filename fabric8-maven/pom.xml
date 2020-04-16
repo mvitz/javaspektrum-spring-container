@@ -38,6 +38,18 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.33.0</version>
+        <configuration>
+          <images>
+            <image>
+              <name>spring-container-fabric8</name>
+            </image>
+          </images>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
