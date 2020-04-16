@@ -45,7 +45,29 @@
         <configuration>
           <images>
             <image>
-              <name>spring-container-fabric8</name>
+              <name>spring-container-fabric8-no-dockerfile</name>
+              <build>
+                <from>adoptopenjdk/openjdk11:jdk-11.0.6_10-alpine-slim</from>
+                <runCmds>
+                  <run>mkdir -p /app &amp;&amp; chown -R daemon /app</run>
+                </runCmds>
+                <user>daemon</user>
+                <workdir>/app</workdir>
+                <assembly>
+                  <targetDir>/app</targetDir>
+                  <descriptorRef>artifact</descriptorRef>
+                </assembly>
+                <cmd>
+                  <exec>
+                    <arg>java</arg>
+                    <arg>-jar</arg>
+                    <arg>/app/${project.artifactId}-${project.version}.jar</arg>
+                  </exec>
+                </cmd>
+                <ports>
+                  <port>8080</port>
+                </ports>
+              </build>
             </image>
           </images>
         </configuration>
