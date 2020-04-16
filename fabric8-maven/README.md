@@ -14,6 +14,7 @@ An installation of JDK 11 and Docker is required.
 
 ## Modifications
 
-The initial application was copied from the example and the real modifications
-afterwards can be seen at https://github.com/mvitz/javaspektrum-spring-container/compare/2774e16...bacf7dc.
+The initial application was copied from fat-jar and the modifications done can
+be seen at
+https://github.com/mvitz/javaspektrum-spring-container/compare/2774e16...bacf7dc.
 
