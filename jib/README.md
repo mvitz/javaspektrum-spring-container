@@ -8,7 +8,7 @@ can be started via `docker run --rm -p 8080:8080 spring-container-jib`.
 
 ## Requirements
 
-An installation of JDK 11 is required.
+An installation of JDK 11 and Docker is required.
 
 
 ## Modifications
