@@ -2,8 +2,9 @@
 
 **How to put Java/Spring Boot applications into a container**
 
-These examples were written for my german [JavaSPEKTRUM](http://www.javaspektrum.de/) article
-"".
+These examples were written for my german [JavaSPEKTRUM](http://www.javaspektrum.de/)
+article "Der Praktiker: Images für Java-Anwendungen bauen - Das Runde muss ins
+Eckige".
 
 
 ## License
