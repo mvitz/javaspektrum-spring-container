@@ -68,6 +68,11 @@
                   <port>8080</port>
                 </ports>
               </build>
+              <run>
+                <ports>
+                  <port>8080:8080</port>
+                </ports>
+              </run>
             </image>
           </images>
         </configuration>
