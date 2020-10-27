@@ -46,6 +46,11 @@
           <images>
             <image>
               <name>spring-container-fabric8</name>
+              <run>
+                <ports>
+                  <port>8080:8080</port>
+                </ports>
+              </run>
             </image>
           </images>
         </configuration>
