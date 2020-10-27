@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:jdk-11.0.6_10-alpine-slim as builder
+FROM adoptopenjdk/openjdk11:jdk-11.0.9_11-alpine-slim as builder
 
 WORKDIR application
 
@@ -7,7 +7,7 @@ COPY ./target/spring-container-*.jar spring-container.jar
 RUN java -Djarmode=layertools -jar spring-container.jar extract
 
 
-FROM adoptopenjdk/openjdk11:jdk-11.0.6_10-alpine-slim
+FROM adoptopenjdk/openjdk11:jdk-11.0.9_11-alpine-slim
 
 RUN mkdir -p /app && \
     chown -R daemon /app
