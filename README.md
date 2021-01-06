@@ -7,7 +7,7 @@ article "Der Praktiker: Images für Java-Anwendungen bauen - Das Runde muss ins
 Eckige".
 
 You can read it online [here](https://www.innoq.com/de/articles/2020/08/java-spring-docker-images/)
-or download as PDF [here](http://www.sigs.de/publications/download/Artikel/vitz_JS_04_20_jjhj.pdf).
+or download as PDF [here](http://www.sigs.de/publications/download/Artikel/vitz_JS_03_20_kjfg.pdf).
 
 
 ## License
